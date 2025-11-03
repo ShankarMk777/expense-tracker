@@ -6,7 +6,7 @@ function App() {
   const [name, setName] = useState('');
   const [amount, setAmount] = useState('');
 
-  // Add a new expense
+
   const addExpense = () => {
     if (name.trim() === '' || amount === '') return;
     const newExpense = {
@@ -19,12 +19,10 @@ function App() {
     setAmount('');
   };
 
-  // Delete expense
   const deleteExpense = (id) => {
     setExpenses(expenses.filter((expense) => expense.id !== id));
   };
 
-  // Calculate total
   const totalExpense = expenses.reduce((total, exp) => total + exp.amount, 0);
 
   return (

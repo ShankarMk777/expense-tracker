@@ -9,7 +9,11 @@
 }
 
 h1 {
-  color: #333;
+   font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0e0e0e;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .input-section {
@@ -54,14 +58,14 @@ button:hover {
 }
 
 .delete-btn {
-  background-color: red;
+  background-color: rgb(255, 255, 255);
   border: none;
-  color: white;
+  color: rgb(255, 0, 0);
   border-radius: 5px;
   cursor: pointer;
   padding: 4px 8px;
 }
 
 .delete-btn:hover {
-  background-color: darkred;
+  background-color: rgb(255, 0, 0);
 }
